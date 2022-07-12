@@ -1,0 +1,206 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+oraimo.py
+
+Created by Sophia Oladapo Sophi-Cody{} on 7/7/22.
+Copyright (c) 2022 Copyright Holder. All rights reserved.
+"""
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;500;600;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato:wght@400;500;600;700&display=swap');
+
+import unittest
+
+:root{
+	--font: Montserrat;
+	--green: #83D200;
+	--white: #FFFFFF;
+	}
+	
+	:root { 
+  --green: #83D200; 
+  --white: #FFFFFF;
+} 
+/*  */
+
+@font-face{
+  font-family: Poppins;
+  src: url('../Fonts/Poppins/Poppins-Regular.ttf');
+  
+  }
+  
+  @font-face{
+  font-family: Poppins-b;
+  src: url('../Fonts/Poppins/Poppins-SemiBold.ttf');
+  
+  }
+   
+  @font-face{
+  font-family: Montserrat;
+  src: url('../Fonts/Montserrat/Montserrat-ExtraBold.ttf');
+  
+  }
+
+
+ *{
+ 	padding:0;
+ 	margin: 0;
+ 	font-family: Poppins, Montserrat, Helvetica;
+ 	box-sizing: border-box;
+ 	font-size: 16px;
+ 	color: black;
+ 
+
+ 	
+ }
+   body{
+   	background: #D6D2D2;
+   	display: flex;
+   	flex-direction: column;
+   	align-items: center;
+   }
+   
+   
+  .section-1{
+  	background: black;
+  	width: 100%;
+  	padding: 20px;
+  	padding-bottom: 30px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	color: var(--white);
+    margin: 20px 30px;
+    width: 80%;
+    border: 2px solid white;  	
+  	
+  }
+   .section-1 .green{
+   	color: var(--green);
+   	font-size: 30px;
+   	text-align: center;
+   	font-family: Montserrat;
+   margin-top: 25px;	
+  
+   }
+   
+   .section-1 p{
+   	width: 70%;
+   	color: var(--white);
+   	font-size: 20px;
+   	margin-top: 30px;
+   	padding-bottom: 60px;
+   	white-space: pre-wrap;
+   }
+  
+  
+  p b{
+  	color: white;
+  	font-family: Poppins-b;
+  	font-size: 20px;
+  } 
+  
+  
+   span.intro{
+   	font-size: 22px;
+   	text-align: center;
+   	color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;	
+   }
+   
+   span.intro img{
+   	width: 500px;   	
+   	margin-top: 20px;
+   	border: 2px solid white;
+   }
+   
+   span.big{
+   	color: white;
+   	font-size: 40px;
+   	font-family: Montserrat;	
+   }
+   
+   a{
+   	text-decoration: none;
+   }
+
+   .button{
+   	display: block;
+   	font-size: 25px;
+   	color: black;
+   	background-color: var(--green);
+   	font-family: Montserrat;
+   	padding: 20px 0;
+   	text-align: center;
+   	border-radius: 5px;
+   }
+   
+   .button:hover{
+   	border: 2px solid white;
+   }
+   
+   @media (max-width: 900px){
+   .section-1{
+  	background: black;
+  	width: 90%;
+  	padding: 20px;
+  	padding-bottom: 30px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	color: var(--white);
+  	 margin: 20px 30px;
+  	
+  }
+   .section-1 .green{
+   	color: var(--green);
+   	font-size: 28px;
+   	text-align: center;
+   	font-family: Montserrat;
+   margin-top: 25px;	
+  
+   }
+   
+   .section-1 p{
+   	width: 80%;
+   	font-size: 18px;
+   	margin-top: 30px;
+   	margin-bottom: 20px;
+   	white-space: pre-wrap;
+   }
+  
+  
+  .button{
+   	display: block;
+   	font-size: 20px;
+   
+   }
+   
+  
+   	
+   }
+   
+  @media (max-width: 480px){
+  	 
+   .section-1 .green{
+   	color: var(--green);
+   	font-size: 24px;
+   
+   }   
+  
+  .section-1 p{
+   	width: 80%;
+   	font-size: 16px;
+   
+   }
+   
+   span.intro img{
+   	width: 300px;	
+   	margin-top: 20px;
+   }
+   
+   }
