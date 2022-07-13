@@ -6,10 +6,9 @@ oraimo.py
 Created by Sophia Oladapo Sophi-Cody{} on 7/7/22.
 Copyright (c) 2022 Copyright Holder. All rights reserved.
 """
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 
 import unittest
 
@@ -37,12 +36,24 @@ import unittest
   
   }
    
+   @font-face{
+  font-family: Poppins-b;
+  src: url('Poppins-SemiBold.ttf');
+  
+  }
+   
+   
   @font-face{
   font-family: Montserrat;
   src: url('../Fonts/Montserrat/Montserrat-ExtraBold.ttf');
   
   }
 
+@font-face{
+  font-family: Montserrat;
+  src: url('Montserrat-ExtraBold.ttf');
+  
+  }
 
  *{
  	padding:0;
@@ -184,8 +195,12 @@ import unittest
    	
    }
    
-  @media (max-width: 480px){
+  @media (max-width: 600px){
   	 
+   .button{
+   	font-size: 17px;
+   }
+   
    .section-1 .green{
    	color: var(--green);
    	font-size: 24px;
@@ -199,7 +214,7 @@ import unittest
    }
    
    span.intro img{
-   	width: 300px;	
+   	width: 250px;	
    	margin-top: 20px;
    }
    
